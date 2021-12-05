@@ -1,0 +1,213 @@
+:root{
+    --main-color: #77787a;
+    --gary:#3e3d3d;
+    --white:#EBE9E9;
+    --light-main:#7c91ac;
+}
+html{
+    letter-spacing: 2px;
+    line-height: 1.8;
+    font-size: calc(7px + .5vw);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    
+}
+ul li {
+    list-style: none; 
+}
+a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+nav{
+   position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 5em;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    z-index: 1000;
+}
+.nav-content{
+    top: 1em; 
+    position: absolute;
+    width: 90%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+.nav-Logo{
+    width: 5.5em;
+   
+}
+.nav-Logo img{
+    width: 100%;
+}
+.nav-menu{
+    cursor: pointer;
+}
+.line{
+    background: var(--main-color);
+    width: 1.8em;
+    height: 0.15em;
+    margin-top: 0.4em;
+}
+.nav-item{
+    display: none;
+}
+.nav-search input{
+    padding: 0.5em 0.2em ;
+   outline: none;
+   border: 2px solid var(--main-color);
+   border-radius: 20em;
+   background: white;
+}
+.hero-content{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/Bus_stop_and_Min-quan_Road,_Guangfu_New_Village_20101104.jpg) no-repeat center ;
+    background-size: cover;
+}
+.hero-content::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+.hero-info{
+    width: 90%;
+    
+    padding: 1em;
+    position: absolute;
+    bottom: 1em;
+    left: 2em;
+    border-radius: 1em;
+    align-items: center;
+    color: var(--white);
+    z-index: 1000;
+}
+.hero-info h6{ 
+    font-size: 10px;
+    font-weight: lighter;
+    
+}
+.hero-info h2{
+    font-size: 25px;
+    font-weight: bolder;
+    margin-top: .5em;
+
+}
+.about-content{
+    position: relative;
+    width: 90%;
+    height: 20em;
+    margin: 7em 0;
+}
+.about-row{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.half{
+    width: 50%;
+    height: 100%;
+    margin-left: 2em;
+    align-items: center;
+}
+.about-row-img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.img-divs{
+    position: absolute;
+    width: 6em;
+    height: 20em;
+    background: gray;
+    margin-left: 3em;
+    border-radius: 20em;
+    overflow: hidden;
+   
+}
+.img-divs img{
+    position: absolute;
+    height: 100%;
+    
+}
+.img-divs:nth-child(1){
+    top: -3em;
+    margin-right: 30em;
+
+}
+.img-divs:nth-child(1) img{
+    right: -2em;
+}
+.img-divs:nth-child(2){
+    top: 3em;
+    margin-right: 15em;
+
+}
+.img-divs:nth-child(2) img{
+    right: -2em;
+}
+.img-divs:nth-child(3){
+    top: 0em;
+    margin-right: 0em;
+
+}
+.img-divs:nth-child(4){
+    top: 5em;
+    margin-right: -15em;
+
+}
+.img-divs:nth-child(4) img{
+    right: -11em;
+}
+.about-row-info-child{
+    margin-top: 1em;
+    height: 100%;
+
+}
+.row-button{
+    width: 11em;
+    height: 2.3em;
+    padding-top: .5em;
+    border: 0.2em solid var(--light-main);
+    border-radius: 1em;
+    margin-top: 3em;
+    transition: .3s ease-in-out;
+}
+.row-button a{
+    padding: 1em 1.5em;
+    
+}
+.row-button a:hover{
+    font-weight: bold;
+    color: white;
+    transition: .3s ease-in-out;
+}
+
+.row-button:hover{
+    
+    background: var(--light-main);
+    transition: .3s ease-in-out;
+}
